@@ -10,7 +10,7 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @ApiOperation({ summary: 'Get authenticated user profile' })
-  @ApiOkResponse({
+  @ApiOkResponse({  
     description: 'Authenticated user profile.',
     schema: {
       example: {
